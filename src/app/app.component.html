@@ -30,7 +30,7 @@
           </div>
           <ul class="list-group list-group-flush">
              <li class="list-group-item"><i class="fa fa-envelope float-right"></i>{{employee?.email}}</li>
-             <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{employee?.phoneNum}}</li>
+             <li class="list-group-item"><i class="fa fa-phone float-right"></i>Phone : {{employee?.phone}}</li>
           </ul>
           <div class="card-body">
              <div class="float-right btn-group btn-group-sm">
@@ -68,7 +68,7 @@
             </div>
             <div class="form-group">
                <label for="phone">Phone</label>
-               <input type="text" ngModel name="phoneNum" class="form-control" id="phoneNum" placeholder="Phone" required>
+               <input type="text" ngModel name="phone" class="form-control" id="phone" placeholder="Phone" required>
             </div>
             <div class="form-group">
                <label for="phone">Image URL</label>
@@ -112,7 +112,7 @@
                 </div>
                 <div class="form-group">
                    <label for="phone">Phone</label>
-                   <input type="text" ngModel="{{editEmployee?.phoneNum}}" name="phoneNum" class="form-control" id="phone" name="phone" placeholder="Phone">
+                   <input type="text" ngModel="{{editEmployee?.phone}}" name="phone" class="form-control" id="phone" name="phone" placeholder="Phone">
                 </div>
                 <div class="form-group">
                    <label for="phone">Image URL</label>

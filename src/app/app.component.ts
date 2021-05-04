@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   public employees: Employee[];
   public editEmployee: Employee;
   public deleteEmployee: Employee;
+  title: any;
 
   constructor(private employeeService: EmployeeService){}
 
@@ -77,7 +78,7 @@ export class AppComponent implements OnInit {
     for (const employee of this.employees) {
       if (employee.name.toLowerCase().indexOf(key.toLowerCase()) !== -1
       || employee.email.toLowerCase().indexOf(key.toLowerCase()) !== -1
-      || employee.phoneNum.toLowerCase().indexOf(key.toLowerCase()) !== -1
+      || employee.phone.toLowerCase().indexOf(key.toLowerCase()) !== -1
       || employee.jobTitle.toLowerCase().indexOf(key.toLowerCase()) !== -1) {
         results.push(employee);
       }
